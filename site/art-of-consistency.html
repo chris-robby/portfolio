@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Art of Consistency | Chris-Robby Twungubumwe</title>
+<meta name="description" content="A bilingual accountability product with real users, where showing up every day earns your deposit back.">
+<meta property="og:title" content="The Art of Consistency | Chris-Robby Twungubumwe">
+<meta property="og:description" content="A bilingual accountability product with real users, where showing up every day earns your deposit back.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='10' fill='%2316181D'/%3E%3Ctext x='18' y='24' font-family='sans-serif' font-size='15' font-weight='700' text-anchor='middle' fill='%23F6F5F2'%3ECT%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="shell">
+<header class="top wrap">
+  <a class="brand" href="index.html"><span class="mark">CT</span><span>Chris-Robby Twungubumwe</span></a>
+  <nav aria-label="Main">
+    <a href="index.html#projects" class="on" aria-current="page">Projects</a>
+    <a href="about.html">About</a>
+    <a href="#contact">Contact</a>
+    <a class="pill" href="resumes.html">Résumé</a>
+  </nav>
+</header>
+<main id="main">
+<section class="wrap intro">
+  <a class="back" href="index.html#projects"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg> All projects</a>
+  <p class="eyebrow">01 / SaaS product</p>
+  <h1>The Art of Consistency</h1>
+  <p class="lede">A bilingual accountability product with real users, where showing up every day earns your deposit back.</p>
+  <dl class="meta">
+    <div><dt>Role</dt><dd>Solo founder and developer</dd></div>
+    <div><dt>Stack</dt><dd>Next.js, TypeScript, Node.js, PostgreSQL, Stripe, Claude API</dd></div>
+    <div class="meta-links"><dt>Links</dt><dd><a href="https://theartofconsistency.app" target="_blank" rel="noopener">Live site</a><a href="https://github.com/chris-robby/BluePrint" target="_blank" rel="noopener">First version</a><a href="resumes/Chris-Robby_Twungubumwe_Full_Stack_EN.pdf" target="_blank" rel="noopener">Résumé (Full Stack Developer)</a></dd></div>
+  </dl>
+</section>
+<section class="wrap hero-media"><figure class="fig"><img src="assets/reclaim-landing.png" alt="Landing page of the live product, headed &quot;Become dangerously consistent&quot;, with cards showing refund progress on days 1, 12 and 21."><figcaption>The live site at theartofconsistency.app, where the product currently goes by the name Reclaim.</figcaption></figure></section>
+<article class="wrap case">
+  <section class="split"><h2>The problem</h2><div class="split-body"><p>Skipping a habit usually costs nothing, so it is easy to skip. This product puts something at stake: you deposit money against a 21-day challenge and earn it back one day at a time by checking in and writing honestly about how it went.</p></div></section>
+  <section class="split"><h2>What I built</h2><div class="split-body"><p>I designed, built and run the whole product myself, from data model to payments to the screens people see each day.</p><ul class="feat"><li><span>→</span><span>Daily check-ins with journaling, where each completed day returns $1 and a skipped day forfeits it</span></li><li><span>→</span><span>AI feedback on journal entries through two Claude API features: vision OCR and an LLM-driven weekly evaluation, each with scoped prompts</span></li><li><span>→</span><span>Google OAuth sign-in, and Stripe payments and webhooks for the deposits</span></li><li><span>→</span><span>Chart.js dashboards so people can see their progress at a glance</span></li><li><span>→</span><span>A bilingual interface, which grew out of BluePrint, a first version built as a React mobile app</span></li></ul></div></section>
+  <figure class="fig">
+  <div class="flow ph">
+    <div class="stage"><div class="node"><strong>Next.js front end</strong><span>TypeScript, Chart.js, bilingual</span></div></div><div class="arrow"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="stage"><div class="node"><strong>Node.js back end</strong><span>REST APIs</span></div></div><div class="arrow"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="stage"><div class="node"><strong>PostgreSQL</strong><span>Application data</span></div><div class="node"><strong>Google OAuth</strong><span>Sign-in</span></div><div class="node"><strong>Stripe</strong><span>Payments and webhooks</span></div><div class="node"><strong>Claude API</strong><span>Vision OCR, weekly evaluation</span></div></div>
+  </div>
+  <figcaption>How the main pieces connect.</figcaption>
+</figure>
+  <section class="split"><h2>How it works</h2><div class="split-body"><p>Jest tests and a GitHub Actions pipeline gate every change. I develop with Claude Code and Codex, guided by a CLAUDE.md I maintain. When an agent gets something wrong, I check its sources, research the question independently and redirect it, rather than trusting the output.</p></div></section>
+  <section class="split"><h2>Outcome</h2><div class="split-body"><div class="metrics"><div class="metric"><p class="v">21</p><p class="l">days in a challenge</p></div><div class="metric"><p class="v">2</p><p class="l">Claude API features in production</p></div><div class="metric"><p class="v">$1</p><p class="l">earned back per journaled day</p></div></div><p class="after">Real people used it and the feedback was positive, but it also showed me what needed work. UI inconsistencies were causing bad experiences, so I fixed them and made the screens less intimidating. The biggest lesson was that real users find problems that tests never will.</p></div></section>
+</article>
+<section class="wrap closing">
+  <a class="next" href="choir-library.html">
+    <span><span class="next-k">Next project</span><span class="next-v">Digital library for a choir</span></span>
+    <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+  </a>
+</section>
+</main>
+<div class="wrap"><footer class="foot" id="contact">
+  <p>© 2026 Chris-Robby Twungubumwe</p>
+  <div>
+    <a href="https://github.com/chris-robby" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/chris-robby-twungubumwe" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:chrisrobby38@gmail.com">Email</a>
+    <a href="resumes.html">Résumés</a>
+  </div>
+</footer></div>
+</div>
+</body>
+</html>
