@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Banking web application | Chris-Robby Twungubumwe</title>
-<meta name="description" content="A full stack banking application with a Spring Boot REST API, a relational database and a React front end.">
+<meta name="description" content="A banking system built for a software engineering course, with a Java REST API, a React dashboard for each role and a domain model that follows a UML design.">
 <meta property="og:title" content="Banking web application | Chris-Robby Twungubumwe">
-<meta property="og:description" content="A full stack banking application with a Spring Boot REST API, a relational database and a React front end.">
+<meta property="og:description" content="A banking system built for a software engineering course, with a Java REST API, a React dashboard for each role and a domain model that follows a UML design.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='10' fill='%2316181D'/%3E%3Ctext x='18' y='24' font-family='sans-serif' font-size='15' font-weight='700' text-anchor='middle' fill='%23F6F5F2'%3ECT%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,27 +28,27 @@
 <main id="main">
 <section class="wrap intro">
   <a class="back" href="index.html#projects"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg> All projects</a>
-  <p class="eyebrow">06 / Full stack</p>
+  <p class="eyebrow">07 / Full stack course project</p>
   <h1>Banking web application</h1>
-  <p class="lede">A full stack banking application with a Spring Boot REST API, a relational database and a React front end.</p>
+  <p class="lede">A banking system built for a software engineering course, with a Java REST API, a React dashboard for each role and a domain model that follows a UML design.</p>
   <dl class="meta">
     <div><dt>Role</dt><dd>Developer</dd></div>
-    <div><dt>Stack</dt><dd>Java, Spring Boot, React, SQL</dd></div>
-    <div class="meta-links"><dt>Links</dt><dd><a href="resumes/Chris-Robby_Twungubumwe_Full_Stack_EN.pdf" target="_blank" rel="noopener">Résumé (Full Stack Developer)</a></dd></div>
+    <div><dt>Stack</dt><dd>Java, Javalin, React, REST APIs, UML</dd></div>
+    <div class="meta-links"><dt>Links</dt><dd><a href="https://github.com/chris-robby/Banking_Application" target="_blank" rel="noopener">Code</a><a href="resumes/Chris-Robby_Twungubumwe_Full_Stack_EN.pdf" target="_blank" rel="noopener">Résumé (Full Stack Developer)</a></dd></div>
   </dl>
 </section>
 <section class="wrap hero-media"><figure class="fig">
   <div class="flow ph">
-    <div class="stage"><div class="node"><strong>React</strong><span>Front end</span></div></div><div class="arrow"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="stage"><div class="node"><strong>Spring Boot REST API</strong><span>Validation, exception handling</span></div></div><div class="arrow"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="stage"><div class="node"><strong>Relational database</strong><span>Transactions, balances, user data</span></div></div>
+    <div class="stage"><div class="node"><strong>React</strong><span>Customer, teller and admin dashboards</span></div></div><div class="arrow"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="stage"><div class="node"><strong>Javalin REST API</strong><span>Role checks, clear error codes</span></div></div><div class="arrow"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div><div class="stage"><div class="node"><strong>Domain model</strong><span>Follows the UML design</span></div><div class="node"><strong>Data store</strong><span>In memory, behind one class</span></div></div>
   </div>
   <figcaption>A layered application with a clear API boundary.</figcaption>
 </figure></section>
 <article class="wrap case">
-  <section class="split"><h2>The problem</h2><div class="split-body"><p>Banking data leaves little room for error. The API has to reject invalid input and handle failures predictably.</p></div></section>
-  <section class="split"><h2>What I built</h2><div class="split-body"><p>A complete application, from database to interface.</p><ul class="feat"><li><span>→</span><span>A REST API with CRUD operations and deliberate endpoint design</span></li><li><span>→</span><span>Data validation and exception handling across the API</span></li><li><span>→</span><span>Database integration behind the API</span></li><li><span>→</span><span>A React front end connected through the REST API</span></li></ul></div></section>
+  <section class="split"><h2>The problem</h2><div class="split-body"><p>Banking data leaves little room for error. The API has to reject invalid input, refuse actions a user is not allowed to take and handle failures predictably.</p></div></section>
+  <section class="split"><h2>What I built</h2><div class="split-body"><p>A complete application built from the course's UML diagram and use cases.</p><ul class="feat"><li><span>→</span><span>A Java REST API built with Javalin, organized around the use cases: sign-in, accounts, deposits, withdrawals, transfers, card management, audit logs and spending by category</span></li><li><span>→</span><span>Role-based access for customers, tellers and administrators, enforced by the API itself</span></li><li><span>→</span><span>A domain model (accounts, savings, cards, checks, transactions, branches) that follows the project's UML diagram</span></li><li><span>→</span><span>A separate React dashboard for each of the three roles</span></li></ul></div></section>
   
-  <section class="split"><h2>How it works</h2><div class="split-body"><p>Spring dependency injection keeps the code modular and testable, which made it practical to cover the application with both unit and integration tests.</p></div></section>
-  <section class="split"><h2>Outcome</h2><div class="split-body"><p>This project gave me practice with every layer of a typical back end, and with designing an API around the failures it has to handle, as well as the normal path.</p></div></section>
+  <section class="split"><h2>How it works</h2><div class="split-body"><p>Errors are explicit: wrong credentials return 401, a role attempting an action it does not have returns 403, a missing account returns 404, and a rejected transaction returns 400 with the reason. Data is kept in memory behind a single DatabaseManager class, so a real database can replace it in one place.</p></div></section>
+  <section class="split"><h2>Outcome</h2><div class="split-body"><div class="metrics"><div class="metric"><p class="v">19</p><p class="l">REST endpoints</p></div><div class="metric"><p class="v">3</p><p class="l">user roles with their own dashboards</p></div></div><p class="after">The project was practice in turning a UML design and a list of use cases into working software, and in designing an API around the failures it has to handle as well as the normal path.</p></div></section>
 </article>
 <section class="wrap closing">
   <a class="next" href="art-of-consistency.html">

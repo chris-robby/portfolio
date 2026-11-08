@@ -94,7 +94,7 @@ ${p.hero ? `<section class="wrap hero-media"><figure class="fig"><img src="${p.h
   ${block('The problem', `<p>${esc(p.problem)}</p>`)}
   ${block('What I built', `<p>${esc(p.built.intro)}</p><ul class="feat">${p.built.items.map((x) => `<li><span>→</span><span>${esc(x)}</span></li>`).join('')}</ul>`)}
   ${p.hero ? flow(p) : ''}
-  ${block('How it works', `<p>${esc(p.how)}</p>${p.code ? `<pre><code>${esc(p.code.text)}</code></pre><p class="src">From <a href="https://github.com/chris-robby/touchgrass/blob/HEAD/${esc(p.code.source)}" target="_blank" rel="noopener">${esc(p.code.source)}</a></p>` : ''}`)}
+  ${block('How it works', `<p>${esc(p.how)}</p>${p.code ? `<pre><code>${esc(p.code.text)}</code></pre><p class="src">From ${p.code.repo ? `<a href="${esc(p.code.repo)}/blob/HEAD/${esc(p.code.source)}" target="_blank" rel="noopener">${esc(p.code.source)}</a>` : `${esc(p.code.source)} (private repository)`}</p>` : ''}`)}
   ${block('Outcome', `${p.metrics.length ? `<div class="metrics">${p.metrics.map((m) => `<div class="metric"><p class="v">${esc(m.v)}</p><p class="l">${esc(m.l)}</p></div>`).join('')}</div>` : ''}<p${p.metrics.length ? ' class="after"' : ''}>${esc(p.outcome)}</p>`)}
 </article>
 <section class="wrap closing">
@@ -141,7 +141,7 @@ const home = doc({
 <section class="wrap band">
   <div class="sec-head"><h2>More work</h2></div>
   <ul class="more">
-    ${moreWork.map((m) => `<li><div><h3>${esc(m.name)}</h3><p class="tags">${esc(m.tags)}</p></div><p>${esc(m.text)}</p></li>`).join('\n    ')}
+    ${moreWork.map((m) => `<li><div><h3>${m.href ? `<a href="${esc(m.href)}" target="_blank" rel="noopener">${esc(m.name)}</a>` : esc(m.name)}</h3><p class="tags">${esc(m.tags)}</p></div><p>${esc(m.text)}</p></li>`).join('\n    ')}
   </ul>
 </section>
 <section class="wrap band">

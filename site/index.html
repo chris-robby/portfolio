@@ -46,12 +46,12 @@
       <span class="card-d">A bilingual accountability product with real users, where showing up every day earns your deposit back.</span>
       <span class="card-s">Next.js, TypeScript, Node.js, PostgreSQL, Stripe, Claude API</span>
     </a>
-    <a class="card" href="choir-library.html">
-      <span class="thumb ph"><span class="thumb-text"><strong>30+</strong><span>choir members</span></span></span>
-      <span class="eyebrow small">02 / Real-world web app</span>
-      <span class="card-t">Digital library for a choir</span>
-      <span class="card-d">A shared home for a choir's scores and audio that also tracks every member's contribution, replacing manual tracking.</span>
-      <span class="card-s">Vue.js, Supabase, REST APIs</span>
+    <a class="card" href="your-dj.html">
+      <span class="thumb ph"><span class="thumb-text"><strong>On the beat</strong><span>mixes by time of day, movement and taste</span></span></span>
+      <span class="eyebrow small">02 / Progressive web app</span>
+      <span class="card-t">Your DJ</span>
+      <span class="card-d">A phone app that plays an EP the way a DJ would: it picks the order and how much of each song to play, then mixes the music videos on the beat, based on the time of day, your movement and what it learns from you.</span>
+      <span class="card-s">JavaScript, Web Audio (AudioWorklet), PWA, Python, GitHub Actions, Vercel</span>
     </a>
     <a class="card" href="touchgrass.html">
       <span class="thumb ph"><img src="assets/touchgrass.jpg" alt="" loading="lazy"></span>
@@ -60,32 +60,44 @@
       <span class="card-d">Free and $10-and-under things to do in Montreal and Ottawa, rebuilt automatically every morning from public sources.</span>
       <span class="card-s">TypeScript, Python, GitHub Actions, GitHub Pages</span>
     </a>
-    <a class="card" href="cloud-platform.html">
-      <span class="thumb ph"><span class="thumb-text"><strong>GKE → OpenShift</strong><span>same services, two platforms</span></span></span>
-      <span class="eyebrow small">04 / DevOps and infrastructure</span>
-      <span class="card-t">Cloud-native microservices platform</span>
-      <span class="card-d">Containerized microservices deployed to Google Kubernetes Engine with Terraform, then migrated to Red Hat OpenShift.</span>
-      <span class="card-s">Docker, Kubernetes, GKE, OpenShift, Terraform, GitHub Actions</span>
+    <a class="card" href="goalachiever.html">
+      <span class="thumb ph"><span class="thumb-text"><strong>Goal → plan</strong><span>and a plan that adapts when you miss a day</span></span></span>
+      <span class="eyebrow small">04 / AI mobile app</span>
+      <span class="card-t">GoalAchiever</span>
+      <span class="card-d">A mobile app that turns a goal described in plain language into a phased roadmap and daily tasks, then adjusts the plan when a task is missed.</span>
+      <span class="card-s">React Native (Expo), TypeScript, Zustand, Supabase, PostgreSQL, Gemini API</span>
     </a>
-    <a class="card" href="multi-agent-pipeline.html">
-      <span class="thumb ph"><span class="thumb-text"><strong>3 agents</strong><span>researcher, executor, validator</span></span></span>
-      <span class="eyebrow small">05 / Applied AI</span>
-      <span class="card-t">Multi-agent AI pipeline</span>
-      <span class="card-d">Specialized AI agents that collaborate through graph-based orchestration, with limits that keep latency and API cost in check.</span>
-      <span class="card-s">Graph-based orchestration, function calling, schema validation</span>
+    <a class="card" href="goal-journal.html">
+      <span class="thumb ph"><span class="thumb-text"><strong>The Mirror</strong><span>AI that reflects your own entries back to you</span></span></span>
+      <span class="eyebrow small">05 / AI web app</span>
+      <span class="card-t">The Goal Journal</span>
+      <span class="card-d">A goal journal laid out like a shelf of notebooks, with an AI panel called The Mirror that reads your entries and shows you the patterns in your own writing.</span>
+      <span class="card-s">Next.js, TypeScript, Prisma, NextAuth, Vercel AI SDK, Claude and Gemini APIs</span>
+    </a>
+    <a class="card" href="task-manager.html">
+      <span class="thumb ph"><span class="thumb-text"><strong>Spring Boot + React</strong><span>JWT sign-in, private tasks for each user</span></span></span>
+      <span class="eyebrow small">06 / Full stack</span>
+      <span class="card-t">Full stack task manager</span>
+      <span class="card-d">A task manager with a Spring Boot REST API secured with JWT and a React front end, where each user manages their own tasks, priorities and due dates.</span>
+      <span class="card-s">Java, Spring Boot, Spring Security, JPA, JWT, React, Vite</span>
     </a>
     <a class="card" href="banking-app.html">
-      <span class="thumb ph"><span class="thumb-text"><strong>Java + React</strong><span>REST API, database, tests</span></span></span>
-      <span class="eyebrow small">06 / Full stack</span>
+      <span class="thumb ph"><span class="thumb-text"><strong>3 roles</strong><span>customer, teller and administrator</span></span></span>
+      <span class="eyebrow small">07 / Full stack course project</span>
       <span class="card-t">Banking web application</span>
-      <span class="card-d">A full stack banking application with a Spring Boot REST API, a relational database and a React front end.</span>
-      <span class="card-s">Java, Spring Boot, React, SQL</span>
+      <span class="card-d">A banking system built for a software engineering course, with a Java REST API, a React dashboard for each role and a domain model that follows a UML design.</span>
+      <span class="card-s">Java, Javalin, React, REST APIs, UML</span>
     </a>
   </div>
 </section>
 <section class="wrap band">
   <div class="sec-head"><h2>More work</h2></div>
   <ul class="more">
+    <li><div><h3>Digital library for a choir</h3><p class="tags">Vue.js, Supabase, REST APIs</p></div><p>Scores and audio in one place for a 30+ member choir, with contribution tracking for every member and a spreadsheet-style admin view. Built as four independently deployed services (authentication, storage, admin view and members view) that communicate over REST.</p></li>
+    <li><div><h3>Cloud-native microservices platform</h3><p class="tags">Docker, Kubernetes, Terraform, OpenShift</p></div><p>Containerized microservices deployed to Google Kubernetes Engine with Terraform, with autoscaling and load balancing, then migrated to Red Hat OpenShift with Source-to-Image builds and Routes. CI/CD with GitHub Actions and Google Artifact Registry.</p></li>
+    <li><div><h3>Multi-agent AI pipeline</h3><p class="tags">Graph orchestration, function calling</p></div><p>Researcher, executor and validator agents collaborating through graph-based orchestration, with outputs validated against schemas, self-correction, and hard loop limits that keep latency and API cost in check.</p></li>
+    <li><div><h3><a href="https://github.com/chris-robby/timetasker" target="_blank" rel="noopener">TimeTrack</a></h3><p class="tags">Next.js, TypeScript, IndexedDB</p></div><p>A daily schedule with a timeline, timers, alarms and recurring tasks, stored in the browser with IndexedDB. It tracks work sessions and interruptions and shows stats on how the day actually went.</p></li>
+    <li><div><h3><a href="https://github.com/chris-robby/defog" target="_blank" rel="noopener">Defog</a></h3><p class="tags">React, TypeScript, Vite</p></div><p>A cognitive check-up with five short tests (reaction time, digit span, Stroop, symbol matching and patterns) that scores each area and gives a recommendation for it.</p></li>
     <li><div><h3>Campus events application</h3><p class="tags">Python, FastAPI, PyTest</p></div><p>Unit and integration tests covering REST endpoints and permissions, with a test SQLite database and pytest-mock. They made it possible to refactor the authentication middleware without breaking routes.</p></li>
     <li><div><h3>Software engineering course project</h3><p class="tags">Java, Cucumber, Docker</p></div><p>Team lead for a team of 4 through an agile cycle, with code reviews, BDD acceptance tests and Docker.</p></li>
     <li><div><h3>C++ projects</h3><p class="tags">C++</p></div><p>A hierarchical file system simulator and a key-value store. I traced an intermittent segfault to a shallow copy in a custom copy constructor that led to a double free.</p></li>
